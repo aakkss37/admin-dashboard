@@ -12,7 +12,7 @@ const Sidebar = () => {
     const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
 
 
-
+	// close sidebar when any navLink clicked in mobile/tab screen
     const handleCloseSideBar = () => {
         if (activeMenu !== undefined && screenSize <= 900) {
             setActiveMenu(false);
